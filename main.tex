@@ -27,35 +27,37 @@
 \usepackage{graphicx}
 \usepackage{listings}
 \usepackage{float}
-\usepackage[urlcolor=blue, colorlinks=true]{hyperref}
-\usepackage{textcomp}
+
+\usepackage{url}
+
+
 \usepackage{color}
- 
+
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
- 
+
 \lstdefinestyle{mystyle}{
-    backgroundcolor=\color{backcolour},   
+    backgroundcolor=\color{backcolour},
     commentstyle=\color{codegreen},
     keywordstyle=\color{magenta},
     numberstyle=\tiny\color{codegray},
     stringstyle=\color{codepurple},
     basicstyle=\footnotesize,
-    breakatwhitespace=false,         
-    breaklines=true,                 
-    captionpos=b,                    
-    keepspaces=true,                 
-    numbers=left,                    
-    numbersep=5pt,                  
-    showspaces=false,                
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
     showstringspaces=false,
-    showtabs=false,                  
+    showtabs=false,
     tabsize=2,
     language=sh
 }
- 
+
 \lstset{style=mystyle}
 
 %%%%%%%
@@ -67,7 +69,7 @@
 % \usepackage{mathptmx}
 
 % For PostScript text
-%\usepackage{w-bookps}
+\usepackage{w-bookps}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Other packages you might want to use:
@@ -91,7 +93,7 @@
 
 %% How many levels of section head would you like to appear in the
 %% Table of Contents?
-%% 0= chapter titles, 1= section titles, 2= subsection titles, 
+%% 0= chapter titles, 1= section titles, 2= subsection titles,
 %% 3= subsubsection titles.
 %%==>>
 \setcounter{tocdepth}{2}
@@ -113,8 +115,8 @@
 
 %%%%%%% Demo of section head containing sample macro:
 %% To get a macro to expand correctly in a section head, with upper and
-%% lower case math, put the definition and set the box 
-%% before \begin{document}, so that when it appears in the 
+%% lower case math, put the definition and set the box
+%% before \begin{document}, so that when it appears in the
 %% table of contents it will also work:
 
 \newcommand{\VT}[1]{\ensuremath{{V_{T#1}}}}
@@ -130,32 +132,32 @@
 \begin{document}
 
 
-\booktitle{Cerdas Menguasai Git}
-\subtitle{Dalam 24 Jam}
+\booktitle{Kecerdasan Buatan}
+\subtitle{Semester 6}
 
-\authors{Rolly M. Awangga\\
-\affil{Informatics Research Center}
+\authors{D4TI3C\\
+\affil{Angkatan 2017}
 %Floyd J. Fowler, Jr.\\
 %\affil{University of New Mexico}
 }
 
-\offprintinfo{Cerdas Menguasai Git, First Edition}{Rolly M. Awangga}
+\offprintinfo{Kecerdasan Buatan}{D4TI3C}
 
 %% Can use \\ if title, and edition are too wide, ie,
 %% \offprintinfo{Survey Methodology,\\ Second Edition}{Robert M. Groves}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% 
+%%
 \halftitlepage
 
-\titlepage
+%\titlepage
 
 
 \begin{copyrightpage}{2019}
 \input{info/copyrightpage}
 \end{copyrightpage}
 
-\dedication{`Jika Kamu tidak dapat menahan lelahnya belajar, 
+\dedication{`Jika Kamu tidak dapat menahan lelahnya belajar,
 Maka kamu harus sanggup menahan perihnya Kebodohan.'
 ~Imam Syafi'i~}
 
@@ -199,10 +201,8 @@ Maka kamu harus sanggup menahan perihnya Kebodohan.'
 \input{info/introduction}
 \end{introduction}
 
-%%%%%%%%%%%%%%%%%%Isi Buku_
-
+%%%%%%%%%%%%%%%%%% Isi Buku %%%%%%%%%%%%%%%%%%
 \chapter{Chapter 1}
-\input{chapters/chapter1/1174006}
 \input{chapters/chapter1/1174070}
 \input{chapters/chapter1/1174069}
 \input{chapters/chapter1/1174086}
@@ -213,28 +213,28 @@ Maka kamu harus sanggup menahan perihnya Kebodohan.'
 \input{chapters/chapter1/1174087}
 \input{chapters/chapter1/1174084}
 \input{chapters/chapter1/1174083}
-
+\input{chapters/chapter1/1174062}
+\input{chapters/chapter1/1174076}
+%Advent
+%Alvan
+%Rifqi
+%1
+%2
+%3
+%4
+%5
+%6
+%7
+%8
+%9
 \chapter{Chapter 2}
-\input{chapters/chapter2/1174006}
-
 \chapter{Chapter 3}
-\input{chapters/chapter3/1174006}
-
 \chapter{Chapter 4}
-\input{chapters/chapter4/1174006}
-
 \chapter{Chapter 5}
-\input{chapters/chapter5/1174006}
-
-\chapter{Chapter 6}
-\input{chapters/chapter6/1174006}
-
-\chapter{Chapter 7}
-\input{chapters/chapter7/1174006}
-
-\bibliographystyle{IEEEtran} 
+\bibliographystyle{IEEEtran}
 %\def\bibfont{\normalsize}
 \bibliography{references}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 %%%%%%%%%%%%%%%
@@ -243,50 +243,50 @@ Maka kamu harus sanggup menahan perihnya Kebodohan.'
 \printindex
 
 %%%% Making an index
-%% 
+%%
 %% 1. Make index entries, don't leave any spaces so that they
 %% will be sorted correctly.
-%% 
+%%
 %% \index{term}
 %% \index{term!subterm}
 %% \index{term!subterm!subsubterm}
-%% 
+%%
 %% 2. Run LaTeX several times to produce <filename>.idx
-%% 
+%%
 %% 3. On command line, type  makeindx <filename> which
-%% will produce <filename>.ind 
-%% 
+%% will produce <filename>.ind
+%%
 %% 4. Type \printindex to make the index appear in your book.
-%% 
-%% 5. If you would like to edit <filename>.ind 
+%%
+%% 5. If you would like to edit <filename>.ind
 %% you may do so. See docs.pdf for more information.
-%% 
+%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%% Making Multiple Indices %%%%%%%%%%%%%%%%
-%% 1. 
+%% 1.
 %% \usepackage{multind}
 %% \makeindex{book}
 %% \makeindex{authors}
 %% \begin{document}
-%% 
+%%
 %% 2.
 %% % add index terms to your book, ie,
 %% \index{book}{A term to go to the topic index}
 %% \index{authors}{Put this author in the author index}
-%% 
+%%
 %% \index{book}{Cows}
 %% \index{book}{Cows!Jersey}
 %% \index{book}{Cows!Jersey!Brown}
-%% 
+%%
 %% \index{author}{Douglas Adams}
 %% \index{author}{Boethius}
 %% \index{author}{Mark Twain}
-%% 
-%% 3. On command line type 
-%% makeindex topic 
+%%
+%% 3. On command line type
+%% makeindex topic
 %% makeindex authors
-%% 
+%%
 %% 4.
 %% this is a Wiley command to make the indices print:
 %% \multiprintindex{book}{Topic index}
