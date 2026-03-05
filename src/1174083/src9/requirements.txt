@@ -27,7 +27,7 @@ Keras-Applications==1.0.6
 Keras-Preprocessing==1.0.5
 keras-vis==0.4.1
 kiwisolver==1.0.1
-Markdown==3.0.1
+Markdown==3.8.1
 MarkupSafe==1.1.0
 matplotlib==3.0.2
 mistune==2.0.3
